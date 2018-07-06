@@ -4,23 +4,24 @@ class NewsController{
 	
 	public function actionAll()
 	{
+		/*
 		$article = new NewsModelTest();
 		$article->title = 'Привет!';
 		$article->text = 'Привет Текст!';
 		$article->insert();
-		
+		*/
 		
 		# var_dump($article->id);
 		
 		# var_dump(NewsModel::findOneByPk(2));
 				
 		# var_dump(isset($articel->title));
-		echo $article->id . "<br>\n";
+		# echo $article->id . "<br>\n";
 		
-		echo 'OK';
-		die;
+		#echo 'OK';
+		#die;
 		
-		$items = News::getAll();
+		$items = NewsModelTest::getAll();
 		$view = new View();
 		$view->assign('items',$items);
 		$view->display('news/all.php');
